@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #8a00fa, #202020);
+  height: 100vh;
+}
+
+.mainContainer {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.starContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.fa-star-o::before {
+  content: "\f006";
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.ratingContainerOutput {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ratingContainerOutput p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.fa-star:hover {
+  cursor: pointer;
+}
+
+.fa-star::before {
+  content: "\f005";
+  font-size: 2.5rem;
+  color: rgb(205, 202, 35);
+}
